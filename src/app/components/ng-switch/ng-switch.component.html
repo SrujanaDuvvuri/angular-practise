@@ -1,0 +1,11 @@
+<p>ng-switch works!</p>
+<div class="container-fluid">
+<h1> Switch cases on Skill</h1>
+<div [ngSwitch]="skill">
+    <div *ngSwitchCase="'java'">Backend developer profile</div>
+    <div *ngSwitchCase="'dotnet'">Dot net developer profile</div>
+    <div *ngSwitchCase="'angular'">Front end developer profile</div>
+    <div *ngSwitchDefault>Admin Profile</div>
+</div>
+ <input type="text" [(ngModel)]="skill">
+</div>

@@ -1,0 +1,46 @@
+<p>company works!</p>
+
+<div class="container" style="text-align: center;">
+    <h1 class="header">Company details...</h1>
+    <ol *ngFor="let company of companies" style="text-align: center;">
+        <li>{{company.id}}</li>
+        <li>{{company.name}}</li>
+        <li>{{company.isParent}}</li>
+    </ol>
+</div>
+<br><br>
+<div class="container" style="border-style: double;">
+    <table class="table table-bordered">
+        <thead >
+            <tr > 
+                <th>ID</th>
+                <th>Name</th>
+                <th>Is Parent?</th>
+                <th>Index</th>
+                <th>Count</th>
+                <th>Even</th>
+                <th>Odd</th>
+                <th>First</th>
+                <th>Last</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let company of companies;let i=index; let c=count; let e=even; let o=odd; let f=first ; let l=last; ">
+                <td>{{company.id}}</td>
+                <td>{{company.name}}</td>
+                <td>{{company.isParent}}</td>
+                <td>{{i}}</td>
+                <td>{{c}}</td>
+                <td>{{!e}}</td>
+                <td>{{!o}}</td>
+                <td>{{f}}</td>
+                <td>{{l}}</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+
+</div>

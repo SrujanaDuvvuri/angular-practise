@@ -1,0 +1,26 @@
+<p>ng-if works!</p>
+<div class="container">
+<h1>NG If Directive</h1>
+<input type="checkbox" [(ngModel)]="show">
+<div *ngIf="show">Show is selected</div>
+<div *ngIf="!show">Show is disabled</div>
+<p [hidden]="!show"> Hidden content</p>
+</div>
+<!-- <input type="date" [(ngModel)]="selDate" (click)="showIf()">{{selDate}} -->
+<!-- <button  [type]="actionType">SUBMIT</button> -->
+Enter Age: <input type="text" [(ngModel)]="age" (onClick)="showIf()" >{{age}}
+<!-- <input type="checkbox" [(ngModel)]="test">{{curDate}} -->
+<div *ngIf="test">false </div>
+<div *ngIf="!test">true</div>
+
+<p hidden>This is hidden content</p>
+
+<div *ngIf="show; then displayif else display">
+    show if
+</div>
+<ng-template #display>
+    display template
+</ng-template>
+<ng-template #displayif>
+    display template if
+</ng-template>

@@ -1,0 +1,19 @@
+.image{
+background-image:url(flower.jpg);
+background-size: 1300px 300px;
+background-repeat: no-repeat
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+    font-weight: normal;
+    font-size: xx-large;
+}
+.caps{
+    font-variant: small-caps;
+}
+.red{
+    color: white;
+}

@@ -1,0 +1,43 @@
+<p>student works!</p>
+<br><br>
+
+<div class='container'>
+    <h1>Students details.. </h1>
+    <table class="table table-bordered" style="border:double;">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Subjects</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students">
+                <td>{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.age}}</td>
+                <td>
+                    <table class="table table-bordered" style="border: dotted;">
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Subject ID</td>
+                                <td>Subject Name</td>
+                                <td>Subject Grade</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let sub of s.subjects; let id=index">
+                                <td>{{id+10}}</td>
+                                <td>{{sub.id}}</td>
+                                <td>{{sub.name}}</td>
+                                <td>{{sub.grade}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

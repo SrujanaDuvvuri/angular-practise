@@ -1,0 +1,22 @@
+h1{
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p{
+    color: red;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label{
+    color:indigo;
+    font-size: large;
+    font-family: cursive;
+}
+
+form{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: ridge;
+    border-color: red;
+}
