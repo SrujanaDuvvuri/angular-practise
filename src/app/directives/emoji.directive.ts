@@ -12,6 +12,8 @@ export class EmojiDirective implements OnInit{
   }
   ngOnInit() {
     this.el.nativeElement.textContent = this.el.nativeElement.textContent + ' ' + this.emoji
+    this.el.nativeElement.textContent = this.el.nativeElement.textContent + ' Hey there !! ' + this.emoji
+
   }
 
 
